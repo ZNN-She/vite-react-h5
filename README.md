@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 # 组件库
-使用antd
+使用antd mobile
 # 主题
 配置文件
 ```
@@ -24,14 +24,6 @@ src/layouts/index.tsx
 * 根据src/page/**/index.tsx终点目录自动生成
 * ***注意：文件首字母大写则认为是组件，否则认为是页面***
 * 权限控制：如果需要做动态路由的权限控制，可以更具配置在这里过滤不需要注册的路由(菜单导航也可以过滤，做入口控制)
-
-# 导航菜单
-```
-src/layouts/nav.tsx
-```
-* 这里包含了所有的菜单配置
-* menuData 是对一些隐藏配置的菜单做了过滤，比如：isMenu: false
-* 权限控制：如果需要做菜单入口的菜单控制，可以子啊getMenu方法中处理(可以配合路由权限控制一起使用)
 
 # API管理pont-engine
 * https://github.com/alibaba/pont#readme
